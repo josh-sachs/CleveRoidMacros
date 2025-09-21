@@ -541,6 +541,10 @@ function CleveRoids.CheckSpellCast(unit, spell)
     end
 end
 
+function CleveRoids.CheckHasPet()
+    return HasPetUI()
+end
+
 -- A list of Conditionals and their functions to validate them
 CleveRoids.Keywords = {
     exists = function(conditionals)
@@ -958,5 +962,13 @@ CleveRoids.Keywords = {
 
     noresting = function()
         return IsResting() == nil
+    end,
+
+    pet = function()
+        return CleveRoids.CheckHasPet()
+    end,
+
+    nopet = function()
+        return not CleveRoids.CheckHasPet()
     end,
 }

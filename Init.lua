@@ -79,6 +79,7 @@ CleveRoids.reactiveSpells = {
     ["Revenge"]       = true,
     ["Overpower"]     = true,
     ["Riposte"]       = true,
+    ["Baited Shot"]   = true,
     ["Mongoose Bite"] = true,
     ["Counterattack"] = true,
     ["Arcane Surge"]  = true,
